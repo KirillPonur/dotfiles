@@ -1,0 +1,23 @@
+[kdeglobals][KDE]
+widgetStyle=breeze
+
+[kdeglobals][General]
+ColorScheme=KDEStory
+
+[kdeglobals][Icons]
+Theme=Breeze Chameleon Dark
+
+[kcminputrc][Mouse]
+cursorTheme=breeze_cursors
+
+[Wallpaper]
+Image=KDE Plasma Scenery 76.png
+
+[plasmarc][Theme]
+name=KDE-Story
+
+[kwinrc][org.kde.kdecoration2]
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__KDE-Story
+
+
