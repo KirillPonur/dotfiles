@@ -28,6 +28,8 @@
 
 .config/calligrarc
 
+.config/calligrasheetsrc
+
 .config/calligrawordsrc
 
 .config/cef_user_data
@@ -237,6 +239,8 @@
 
 .local/share/baloo
 
+.local/share/calligrasheets
+
 .local/share/calligrawords
 
 .local/share/color-schemes
@@ -347,3 +351,12 @@
 .Xauthority
 
 .Xclients
+
+.bash_history
+
+aircrack/
+
+hack
+
+.local/share/calligrasheets/
+
