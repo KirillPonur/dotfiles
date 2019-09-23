@@ -1,7 +1,7 @@
 import os
 useful_dirs=['.config','.local/share']
 useful_sub_dirs=[
-                 ['gtk-3.0','systemd'],
+                 ['gtk-3.0',],
 				 ['plasma']
 				]
 for j in range(len(useful_dirs)):
