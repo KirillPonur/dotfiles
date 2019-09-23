@@ -2,17 +2,13 @@
 
 .config/GitKraken
 
-.config/NuGet
-
 .config/QtProject.conf
-
-.config/Spyderrc
 
 .config/Trolltech.conf
 
-.config/akregatorrc
+.config/VK
 
-.config/arkrc
+.config/akregatorrc
 
 .config/autostart
 
@@ -24,19 +20,15 @@
 
 .config/bluedevilglobalrc
 
-.config/breezerc
-
 .config/calligrarc
 
 .config/calligrasheetsrc
-
-.config/calligrawordsrc
 
 .config/cef_user_data
 
 .config/dconf
 
-.config/discord
+.config/device_automounter_kcmrc
 
 .config/dolphinrc
 
@@ -44,15 +36,9 @@
 
 .config/falkon
 
-.config/filelightrc
-
 .config/fontconfig
 
-.config/gconf
-
 .config/google-chrome
-
-.config/gtk-2.0
 
 .config/gtkrc
 
@@ -60,13 +46,9 @@
 
 .config/gwenviewrc
 
-.config/inkscape
-
 .config/kactivitymanagerd-statsrc
 
 .config/kactivitymanagerdrc
-
-.config/karbonrc
 
 .config/katemetainfos
 
@@ -76,17 +58,9 @@
 
 .config/katevirc
 
-.config/kcmfonts
-
 .config/kcminputrc
 
-.config/kcmshell5rc
-
 .config/kconf_updaterc
-
-.config/kde.org
-
-.config/kdebugrc
 
 .config/kdeconnect
 
@@ -94,27 +68,13 @@
 
 .config/kdeglobals
 
-.config/kdialogrc
-
-.config/kfontinstuirc
-
-.config/kfontviewrc
-
 .config/kglobalshortcutsrc
 
-.config/khelpcenterrc
-
 .config/khotkeysrc
-
-.config/kmenueditrc
 
 .config/kmixrc
 
 .config/knfsshare
-
-.config/knotifyrc
-
-.config/konsolerc
 
 .config/krunnerrc
 
@@ -142,21 +102,9 @@
 
 .config/manjaro-hello.json
 
-.config/matplotlib
-
-.config/menus
-
 .config/mimeapps.list
 
 .config/octopi
-
-.config/okularpartrc
-
-.config/okularrc
-
-.config/partitionmanagerrc
-
-.config/pavucontrol.ini
 
 .config/plasma-localerc
 
@@ -164,31 +112,17 @@
 
 .config/plasma-org.kde.plasma.desktop-appletsrc
 
-.config/plasma-workspace
-
 .config/plasmanotifyrc
 
 .config/plasmarc
 
 .config/plasmashellrc
 
-.config/powerdevilrc
-
 .config/powermanagementprofilesrc
-
-.config/print-manager
 
 .config/pulse
 
-.config/qterminal.org
-
-.config/sddmthemeinstallerrc
-
 .config/session
-
-.config/spectaclerc
-
-.config/spyder-py3
 
 .config/startupconfig
 
@@ -198,36 +132,20 @@
 
 .config/sublime-text-3
 
-.config/systemmonitorrc
-
 .config/systemsettingsrc
 
-.config/thumbnail.sorc
-
-.config/tilda
+.config/touchpadxlibinputrc
 
 .config/trashrc
-
-.config/unity3d
 
 .config/user-dirs.dirs
 
 .config/user-dirs.locale
-
-.config/yakuakerc
-
-.config/zathura
 #\end{.config}
 
 #\begin{.local/share}
 
-.local/share/CKAN
-
-.local/share/NuGet
-
 .local/share/RecentDocuments
-
-.local/share/Spyder
 
 .local/share/Steam
 
@@ -235,39 +153,19 @@
 
 .local/share/applications
 
-.local/share/aurorae
-
 .local/share/baloo
 
 .local/share/calligrasheets
 
-.local/share/calligrawords
-
-.local/share/color-schemes
-
 .local/share/dolphin
 
-.local/share/gsettings-data-convert
-
-.local/share/gwenview
-
-.local/share/icons
-
-.local/share/inxi
-
-.local/share/jupyter
+.local/share/gvfs-metadata
 
 .local/share/kactivitymanagerd
-
-.local/share/karbon
 
 .local/share/kate
 
 .local/share/kcookiejar
-
-.local/share/kded5
-
-.local/share/khelpcenter
 
 .local/share/klipper
 
@@ -281,10 +179,6 @@
 
 .local/share/kxmlgui5
 
-.local/share/okular
-
-.local/share/plasma_icons
-
 .local/share/recently-used.xbel
 
 .local/share/sddm
@@ -294,12 +188,6 @@
 .local/share/user-places.xbel.bak
 
 .local/share/user-places.xbel.tbcache
-
-.local/share/vulkan
-
-.local/share/wallpapers
-
-.local/share/zathura
 #\end{.local/share}
 
 .cache/

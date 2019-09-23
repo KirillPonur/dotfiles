@@ -1,23 +1,18 @@
-include "/usr/share/themes/Breath/gtk-2.0/gtkrc"
+# File created by KDE Gtk Config
+# Configs for GTK2 programs 
 
-style "vimfix" {
-  bg[NORMAL] = "#242424" # this matches my gvim theme 'Normal' bg color.
-}
-widget "vim-main-window.*GtkForm" style "vimfix"
- 
-# taken from a very helpful post here: https://bbs.archlinux.org/viewtopic.php?id=65285
-
-
+include "/usr/share/themes/Breath-Dark/gtk-2.0/gtkrc"
 style "user-font" 
 {
 	font_name="Noto Sans Regular"
 }
 widget_class "*" style "user-font"
 gtk-font-name="Noto Sans Regular 10"
-gtk-theme-name="Breath"
-gtk-icon-theme-name="maia"
-gtk-fallback-icon-theme="hicolor"
+gtk-theme-name="Breath-Dark"
+gtk-icon-theme-name="breeze-dark"
+gtk-fallback-icon-theme="breeze"
+gtk-cursor-theme-name="breeze_cursors"
 gtk-toolbar-style=GTK_TOOLBAR_BOTH_HORIZ
 gtk-menu-images=1
 gtk-button-images=1
-
+gtk-primary-button-warps-slider=0
