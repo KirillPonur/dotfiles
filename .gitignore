@@ -248,3 +248,14 @@ hack
 
 .local/share/calligrasheets/
 
+.bash_history
+
+.bash_logout
+
+.bash_profile
+
+.Xauthority
+
+.Xclients
+
+.xinitrc
