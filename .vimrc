@@ -17,7 +17,7 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips",$HOME."/.vim/"]
 
-Plug 'airblade/vim-gitgutter'
+"Plug 'airblade/vim-gitgutter'
 
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
@@ -36,11 +36,12 @@ let g:vimtex_complete_enabled=1
 set conceallevel=2
 let g:tex_conceal="abdgm"
 
-let g:vimtex_view_method = 'mupdf'
-let g:vimtex_view_general_viewer = 'mupdf'
+"let g:vimtex_view_method = 'default'
+let g:vimtex_view_general_viewer = 'okular'
+let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
+let g:vimtex_view_general_options_latexmk = '--unique'
 let g:XkbSwitchLib=$HOME."/.vim/libxkbswitch.so"
 Plug 'lyokha/vim-xkbswitch'
-    "Plug 'DeXP/xkb-switch-win'
 
 
 Plug 'thinca/vim-fontzoom'
@@ -70,7 +71,7 @@ set fileformats=unix,dos,mac
 
 "------------------------------------------------------------
 " 3. Features
-"------------------------------------------------------------
+""------------------------------------------------------------
 set noeb vb t_vb =
 " Russian and English spellchecking
 " set spell spelllang=ru,en_us
@@ -99,8 +100,8 @@ if has("gui_running")
     set guifont=Consolas:h13:cANSI
   endif
   if has('unix')
-    "set guifont=Droid\ Sans\ Mono
-    set guifont=Monospace\ 12
+    set guifont=Droid\ Sans\ Mono\ 12
+    "set guifont=Monospace\ 12
   endif
 endif
 
@@ -128,7 +129,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='minimalist'
 let g:airline_section_c = []
 "let g:airline_symbols.maxlinenr = ' ln '
-let g:airline#extensions#tabline#formatter = 'jsformatter'
+"let g:airline#extensions#tabline#formatter = 'jsformatter'
 
 
 let g:airline_detect_spell=0

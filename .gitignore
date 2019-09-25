@@ -10,6 +10,8 @@
 
 .config/akregatorrc
 
+.config/arkrc
+
 .config/autostart
 
 .config/autostart-scripts
@@ -37,6 +39,8 @@
 .config/falkon
 
 .config/fontconfig
+
+.config/gconf
 
 .config/google-chrome
 
@@ -76,6 +80,8 @@
 
 .config/knfsshare
 
+.config/konsolerc
+
 .config/krunnerrc
 
 .config/kscreenlockerrc
@@ -83,6 +89,8 @@
 .config/ksmserverrc
 
 .config/ksplashrc
+
+.config/ksysguardrc
 
 .config/ktimezonedrc
 
@@ -98,13 +106,23 @@
 
 .config/libaccounts-glib
 
+.config/libreoffice
+
 .config/manjaro
 
 .config/manjaro-hello.json
 
+.config/matplotlib
+
 .config/mimeapps.list
 
 .config/octopi
+
+.config/okularpartrc
+
+.config/okularrc
+
+.config/plasma-locale-settings.sh
 
 .config/plasma-localerc
 
@@ -124,6 +142,10 @@
 
 .config/session
 
+.config/soffice.binrc
+
+.config/spyder-py3
+
 .config/startupconfig
 
 .config/startupconfigfiles
@@ -133,6 +155,8 @@
 .config/sublime-text-3
 
 .config/systemsettingsrc
+
+.config/tilda
 
 .config/touchpadxlibinputrc
 
@@ -159,13 +183,23 @@
 
 .local/share/dolphin
 
+.local/share/gsettings-data-convert
+
 .local/share/gvfs-metadata
+
+.local/share/gwenview
+
+.local/share/inxi
+
+.local/share/jupyter
 
 .local/share/kactivitymanagerd
 
 .local/share/kate
 
 .local/share/kcookiejar
+
+.local/share/kded5
 
 .local/share/klipper
 
@@ -175,11 +209,17 @@
 
 .local/share/kscreen
 
+.local/share/ksysguard
+
 .local/share/kwalletd
 
 .local/share/kxmlgui5
 
+.local/share/okular
+
 .local/share/recently-used.xbel
+
+.local/share/remoteview
 
 .local/share/sddm
 
