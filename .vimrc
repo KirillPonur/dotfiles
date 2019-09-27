@@ -28,32 +28,20 @@ filetype plugin on
 
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+Plug 'lervag/vimtex', {'for':'tex'}
 
-Plug 'lervag/vimtex'
-let g:tex_flavor='latex'
-let g:vimtex_quickfix_mode=0
-let g:vimtex_complete_enabled=1
-set conceallevel=2
-let g:tex_conceal="abdgm"
-
-"let g:vimtex_view_method = 'default'
-let g:vimtex_view_general_viewer = 'okular'
-let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
-let g:vimtex_view_general_options_latexmk = '--unique'
-let g:XkbSwitchLib=$HOME."/.vim/libxkbswitch.so"
 Plug 'lyokha/vim-xkbswitch'
+let g:XkbSwitchLib=$HOME."/.vim/libxkbswitch.so"
 
 
-Plug 'thinca/vim-fontzoom'
+"Plug 'thinca/vim-fontzoom'
 Plug 'crusoexia/vim-monokai'
-
-
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
 Plug 'scrooloose/nerdtree'
+Plug 'klen/python-mode'	        " Python mode (docs, refactor, lints, highlighting, run and ipdb and more)
+Plug 'davidhalter/jedi-vim' 		" Jedi-vim autocomplete plugin^
 call plug#end()
-
 "------------------------------------------------------------
 " 2. Language and encoding
 "------------------------------------------------------------
@@ -68,7 +56,6 @@ set encoding=utf-8
 set termencoding=utf-8
 set fileencodings=utf-8
 set fileformats=unix,dos,mac
-
 "------------------------------------------------------------
 " 3. Features
 ""------------------------------------------------------------
@@ -76,8 +63,6 @@ set noeb vb t_vb =
 " Russian and English spellchecking
 " set spell spelllang=ru,en_us
 
-" Reload .vimrc when saving
-"autocmd BufWritePost .vimrc source $MYVIMRC
 " Enable syntax highlighting
 syntax on
 " Line numbering 
@@ -88,6 +73,7 @@ set number
 "set incsearch
 "set ignorecase
 
+set smarttab
 
 colorscheme monokai
 set termguicolors
@@ -126,7 +112,7 @@ let g:airline#extensions#tabline#enabled = 1
 ""    let g:airline_symbols = {}
 "endif
 
-let g:airline_theme='minimalist'
+let g:airline_theme='molokai'
 let g:airline_section_c = []
 "let g:airline_symbols.maxlinenr = ' ln '
 "let g:airline#extensions#tabline#formatter = 'jsformatter'
@@ -153,7 +139,6 @@ set guioptions-=e
 "------------------------------
 " 3.3. Session Settings       
 "------------------------------
-
 let g:session_default_to_last = 1
 let g:session_autoload = 'yes'
 let g:session_autosave = 'yes'
@@ -161,34 +146,15 @@ let g:session_autosave = 'yes'
 let g:session_autosave_periodic = 1
 let g:session_autosave_silent = 1
 
-
-"------------------------------------------------------------
-"4. Map definitions (Key bindings)                                   
-"------------------------------------------------------------
-
-" Swap lines up and down
-nnoremap <silent> <c-s-j> :call <SID>swap_up()<CR>
-nnoremap <silent> <c-s-k> :call <SID>swap_down()<CR>
-
-" Return to last mistake and fix it
-" <C-l>==<Ctrl+L> 
-inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
-nnoremap <C-l> i<c-g>u<Esc>[s1z=`]a<c-g>u<Esc>
-
-"nnoremap <silent> <C-o> :browse confirm e <CR>
-nnoremap <silent> <C-o> :NERDTreeToggle "expand('%:p:h')"<CR>
-nnoremap <silent> <C-b> :call Compile() <CR>
-nnoremap <localleader>env :echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")') <CR>
-
-"  map <F11> <Esc>:call libcallnr("gvimfullscreen_64.dll", "ToggleFullScreen", 0)<CR>:set guioptions-=m <CR>
-"------------------------------------------------------------
-"5.TeX Settings                                             
-"------------------------------------------------------------
+"------------------------------
+" 3.3. Autocmd Settings       
+"------------------------------
 " Russian and English spellchecking
 autocmd BufNewFile,BufRead *.tex setlocal spell spelllang=ru,en_us
+""" Enable autochange layout in normal mode
+autocmd BufNewFile,BufRead *.tex EnableXkbSwitch
 augroup TeXautocmd
   autocmd!
-  autocmd BufNewFile,BufRead *.tex EnableXkbSwitch
   autocmd CursorMovedI *.tex call ToggleLangMap()
   autocmd CursorHoldI  *.tex call ToggleLangMap()
   autocmd InsertEnter  *.tex call ToggleLangMap()
@@ -198,9 +164,51 @@ augroup END
 
 augroup VimRCautocmd
     autocmd!
+    "Reload .vimrc after saving
     autocmd BufWritePost .vimrc source ~/.vimrc 
 augroup END
+"function! OpenIPython()
+"    "let g:ConqueTerm_FastMode = 1
+    "let g:ConqueTerm_InsertOnEnter = 1
+    ""echo s:ipython_buffer
+    "exe "ConqueTermSplit ipython " . expand("%")
+    "let s:ipython_buffer=bufname('')
+    "augroup IPython
+        "autocmd!
+        "autocmd WinEnter s:ipython_buffer set eventignore+=CursorHoldI,CursorMovedI
+        "autocmd WinLeave  s:ipython_buffer set eventignore-=CursorHoldI,CursorMovedI
+    "augroup END
+"endfunction
+""------------------------------------------------------------
+"4. Map definitions (Key bindings)                                   
+"------------------------------------------------------------
+" Swap lines up and down
+nnoremap <silent> <c-s-j> :call <SID>swap_up()<CR>
+nnoremap <silent> <c-s-k> :call <SID>swap_down()<CR>
+" Return to last mistake and fix it
+" <C-l>==<Ctrl+L> 
+inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+nnoremap <C-l> i<c-g>u<Esc>[s1z=`]a<c-g>u<Esc>
 
+
+nnoremap <silent> <C-o> :NERDTreeToggle "expand('%:p:h')"<CR>
+nnoremap <silent> <C-b> :call Compile() <CR>
+
+nnoremap <localleader>env :echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")') <CR>
+
+"------------------------------------------------------------
+"5.TeX Settings                                             
+"------------------------------------------------------------
+let g:tex_flavor='latex'
+let g:vimtex_quickfix_mode=0
+let g:vimtex_complete_enabled=1
+set conceallevel=2
+let g:tex_conceal="abdgm"
+
+"let g:vimtex_view_method = 'default'
+let g:vimtex_view_general_viewer = 'okular'
+let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
+let g:vimtex_view_general_options_latexmk = '--unique'
 
 "------------------------------
 "5.1. Autochange keyboard layout
@@ -268,6 +276,15 @@ function! ToggleLangMap()
 endfunction
 "end{ToggleLangMap}
 "------------------------------------------------------------
+"
+"------------------------------------------------------------
+"6.Python Settings                                             
+"------------------------------------------------------------
+let g:pymode_python = 'python3'
+"let g:pymode_rope = 1
+"let g:pymode_breakpoint = 1
+"let g:syntastic_python_pylint_exe = 'python3 -m pylint'
+"------------------------------------------------------------
 
 function! s:swap_lines(n1, n2)
     let line1 = getline(a:n1)
@@ -275,6 +292,7 @@ function! s:swap_lines(n1, n2)
     call setline(a:n1, line2)
     call setline(a:n2, line1)
 endfunction
+
 
 function! s:swap_up()
     let n = line('.')
