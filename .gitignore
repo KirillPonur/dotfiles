@@ -4,6 +4,8 @@
 
 .config/QtProject.conf
 
+.config/Spyderrc
+
 .config/Trolltech.conf
 
 .config/VK
@@ -37,6 +39,8 @@
 .config/emaildefaults
 
 .config/falkon
+
+.config/filetypesrc
 
 .config/fontconfig
 
@@ -144,6 +148,8 @@
 
 .config/soffice.binrc
 
+.config/spectaclerc
+
 .config/spyder-py3
 
 .config/startupconfig
@@ -154,6 +160,8 @@
 
 .config/sublime-text-3
 
+.config/systemmonitorrc
+
 .config/systemsettingsrc
 
 .config/tilda
@@ -162,9 +170,7 @@
 
 .config/trashrc
 
-.config/user-dirs.dirs
-
-.config/user-dirs.locale
+.config/yakuakerc
 #\end{.config}
 
 #\begin{.local/share}
@@ -252,10 +258,6 @@
 
 .texlive/
 
-Загрузки/
-
-Документы/
-
 .xinitrc
 
 .mupdf.history
@@ -283,8 +285,6 @@
 .bash_history
 
 aircrack/
-
-hack
 
 .local/share/calligrasheets/
 
