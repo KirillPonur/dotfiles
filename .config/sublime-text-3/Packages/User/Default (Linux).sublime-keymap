@@ -1,0 +1,9 @@
+[
+    { 
+        "keys": ["ctrl+t"], "command": "toggle_terminus_panel", 
+        "args": {
+                "cmd": "ipython",
+                "cwd": "${file_path:${folder}}"
+                }
+    }
+]
