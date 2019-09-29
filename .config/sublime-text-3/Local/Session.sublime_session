@@ -215,9 +215,18 @@
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
+				},
+				{
+					"file": "/home/kannab/.gitignore.py",
+					"settings":
+					{
+						"buffer_size": 1094,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
 				}
 			],
-			"build_system": "",
+			"build_system": "Packages/Python/Python.sublime-build",
 			"build_system_choices":
 			[
 				[
@@ -322,7 +331,7 @@
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 1,
 					"sheets":
 					[
 						{
