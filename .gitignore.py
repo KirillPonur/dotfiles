@@ -1,44 +1,50 @@
 import os
-useful_dirs=['.config','.local/share']
+useful_dirs=[
+            '.config',
+            '.local/share'
+            ]
 useful_sub_dirs=[
-                 ['gtk-3.0','user-dirs.dirs','user-dirs.locale','sublime-text-3'],
-				 ['plasma']
-				]
-for j in range(len(useful_dirs)):
-	file = open('.gitignore','r')
-	ignored=useful_sub_dirs[j]
-	with file as f:
-		n=0
-		lines=f.readlines()
-		lines_before=[]
-		lines_after=[]
-		for line in lines:
-			if line == '#\\begin{'+useful_dirs[j]+'}\n':
-				n_begin=n+1
-			elif line == '#\\end{'+useful_dirs[j]+'}\n':
-				n_end=n
-			n+=1
-		for i in range(len(lines)):
-			if i<n_begin:
-				lines_before.append(lines[i])
-			if i>=n_end:
-				lines_after.append(lines[i])
-	file.close()
+                 ['gtk-3.0','user-dirs.dirs','user-dirs.locale','sublime-text-3/Packages/User','sublime-text-3/Local/License.sublime_license'],
+                 ['plasma']
+                ]
 
-	directories=[x for x in os.listdir('./'+useful_dirs[j])]
-	currently_inserted=[ lines[i] for i in range(n_begin,n_end)]
-	lines_insert=[]
+gitignore=[]
+ignored=[]
 
-	result = list( set(directories) - set(currently_inserted) - set(ignored))
-	result.sort()
-	print(result)
-	for i in result:
-		lines_insert.append('\n'+useful_dirs[j]+'/'+i+'\n')
+for i in range(len(useful_dirs)):
+    for j in range(len(useful_sub_dirs[i])):
+        ignored.append(useful_dirs[i]+'/'+useful_sub_dirs[i][j])
 
-	with open('.gitignore','w') as f:
-		lines=lines_before+lines_insert+lines_after
-		for line in lines:
-			f.write(line)
-	file.close()
+file = open('.gitignore','r')
+with file as f:
+    n=0
+    lines=f.readlines()
+    lines_after=[]
+    for line in lines:
+        if line!='\n' and line[0]!='#':
+            gitignore.append(line[:-1])
 
+# print(gitignore)
+directories=[useful_dirs[i]+'/'+ x for i in range(len(useful_dirs)) for x in os.listdir('./'+useful_dirs[i])]
 
+directories=directories+ ['.cache','.git',
+                          '.gitkraken','.ipython',
+                          '.kde4','.pki','.steam',
+                          '.texlive', 
+                          '.bash_history','.bash_logout','.bash_profile',
+                          '.esd_auth','downloads','documents',
+                          '.steampath','.steampid','.Xauthority','.Xclients',
+                          '.xinitrc','.viminfo','.profile',
+                          '.vim/plugged','.vim/sessions']
+ignored = set(ignored)
+directories = set(directories+gitignore)
+result = sorted( list(   directories  - ignored   ) )
+print(result)
+
+lines=[]
+with open('.gitignore','w') as f:
+    for i in result:
+        lines.append(i+'\n')
+    for line in lines:
+        f.write(line)
+file.close()
