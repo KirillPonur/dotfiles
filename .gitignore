@@ -2,13 +2,15 @@
 
 .config/GitKraken
 
+.config/NuGet
+
 .config/QtProject.conf
 
 .config/Spyderrc
 
 .config/Trolltech.conf
 
-.config/VK
+.config/VirtualBox
 
 .config/akregatorrc
 
@@ -24,21 +26,27 @@
 
 .config/bluedevilglobalrc
 
+.config/breezerc
+
 .config/calligrarc
 
 .config/calligrasheetsrc
+
+.config/calligrawordsrc
 
 .config/cef_user_data
 
 .config/dconf
 
-.config/device_automounter_kcmrc
+.config/discord
 
 .config/dolphinrc
 
 .config/emaildefaults
 
 .config/falkon
+
+.config/filelightrc
 
 .config/filetypesrc
 
@@ -48,15 +56,21 @@
 
 .config/google-chrome
 
+.config/gtk-2.0
+
 .config/gtkrc
 
 .config/gtkrc-2.0
 
 .config/gwenviewrc
 
+.config/inkscape
+
 .config/kactivitymanagerd-statsrc
 
 .config/kactivitymanagerdrc
+
+.config/karbonrc
 
 .config/katemetainfos
 
@@ -66,9 +80,17 @@
 
 .config/katevirc
 
+.config/kcmfonts
+
 .config/kcminputrc
 
+.config/kcmshell5rc
+
 .config/kconf_updaterc
+
+.config/kde.org
+
+.config/kdebugrc
 
 .config/kdeconnect
 
@@ -78,13 +100,25 @@
 
 .config/kdialogrc
 
+.config/kfontinstuirc
+
+.config/kfontviewrc
+
 .config/kglobalshortcutsrc
 
+.config/khelpcenterrc
+
 .config/khotkeysrc
+
+.config/kinfocenterrc
+
+.config/kmenueditrc
 
 .config/kmixrc
 
 .config/knfsshare
+
+.config/knotifyrc
 
 .config/konsolerc
 
@@ -95,8 +129,6 @@
 .config/ksmserverrc
 
 .config/ksplashrc
-
-.config/ksysguardrc
 
 .config/ktimezonedrc
 
@@ -120,6 +152,8 @@
 
 .config/matplotlib
 
+.config/menus
+
 .config/mimeapps.list
 
 .config/octopi
@@ -130,7 +164,9 @@
 
 .config/pamac
 
-.config/plasma-locale-settings.sh
+.config/partitionmanagerrc
+
+.config/pavucontrol.ini
 
 .config/plasma-localerc
 
@@ -146,9 +182,17 @@
 
 .config/plasmashellrc
 
+.config/powerdevilrc
+
 .config/powermanagementprofilesrc
 
+.config/print-manager
+
 .config/pulse
+
+.config/qterminal.org
+
+.config/sddmthemeinstallerrc
 
 .config/session
 
@@ -164,22 +208,34 @@
 
 .config/startupconfigkeys
 
+.config/sublime-merge
+
 .config/systemmonitorrc
 
 .config/systemsettingsrc
 
-.config/tilda
+.config/thumbnail.sorc
 
-.config/touchpadxlibinputrc
+.config/tilda
 
 .config/trashrc
 
+.config/unity3d
+
 .config/yakuakerc
+
+.config/zathura
 #\end{.config}
 
 #\begin{.local/share}
 
+.local/share/CKAN
+
+.local/share/NuGet
+
 .local/share/RecentDocuments
+
+.local/share/Spyder
 
 .local/share/Steam
 
@@ -187,17 +243,23 @@
 
 .local/share/applications
 
+.local/share/aurorae
+
 .local/share/baloo
 
 .local/share/calligrasheets
+
+.local/share/calligrawords
+
+.local/share/color-schemes
 
 .local/share/dolphin
 
 .local/share/gsettings-data-convert
 
-.local/share/gvfs-metadata
-
 .local/share/gwenview
+
+.local/share/icons
 
 .local/share/inxi
 
@@ -205,11 +267,15 @@
 
 .local/share/kactivitymanagerd
 
+.local/share/karbon
+
 .local/share/kate
 
 .local/share/kcookiejar
 
 .local/share/kded5
+
+.local/share/khelpcenter
 
 .local/share/klipper
 
@@ -219,19 +285,15 @@
 
 .local/share/kscreen
 
-.local/share/ksysguard
-
 .local/share/kwalletd
 
 .local/share/kxmlgui5
 
 .local/share/okular
 
-.local/share/plasma_notes
+.local/share/plasma_icons
 
 .local/share/recently-used.xbel
-
-.local/share/remoteview
 
 .local/share/sddm
 
@@ -240,6 +302,12 @@
 .local/share/user-places.xbel.bak
 
 .local/share/user-places.xbel.tbcache
+
+.local/share/vulkan
+
+.local/share/wallpapers
+
+.local/share/zathura
 #\end{.local/share}
 
 .cache/
@@ -329,3 +397,9 @@ downloads/
 .config/sublime-text-3/Local/Session.sublime_session
 
 *.sublime_session
+
+.config/sublime-text-3/Installed Packages/0_package_control_loader.sublime-package
+
+.config/sublime-text-3/Cache/YAML/YAML.sublime-syntax.rcache
+
+.config/sublime-text-3/Cache/JavaScript/JavaScript.sublime-syntax.rcache
