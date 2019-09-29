@@ -1,0 +1,1 @@
+{"sublime_text": ">=3125", "url": "https://latextools.readthedocs.io/", "dependencies": [], "description": "LaTeX plugin for Sublime Text 2 and 3", "version": "3.15.1", "platforms": ["*"]}
