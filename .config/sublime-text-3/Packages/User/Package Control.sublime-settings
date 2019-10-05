@@ -5,8 +5,13 @@
 	],
 	"installed_packages":
 	[
+		"Anaconda",
 		"LaTeXTools",
+		"Monokai Dark",
+		"Monokai++",
 		"Package Control",
-		"Terminus"
+		"Terminus",
+		"Theme - Monokai+",
+		"Theme - Seti Monokai"
 	]
 }

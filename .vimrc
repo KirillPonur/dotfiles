@@ -33,14 +33,13 @@ Plug 'lervag/vimtex', {'for':'tex'}
 Plug 'lyokha/vim-xkbswitch'
 let g:XkbSwitchLib=$HOME."/.vim/libxkbswitch.so"
 
-
+Plug 'ervandew/supertab'
 "Plug 'thinca/vim-fontzoom'
 Plug 'crusoexia/vim-monokai'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
-Plug 'klen/python-mode'	        " Python mode (docs, refactor, lints, highlighting, run and ipdb and more)
-Plug 'davidhalter/jedi-vim' 		" Jedi-vim autocomplete plugin^
+Plug 'rosenfeld/conque-term'      	" Consoles as buffers
 call plug#end()
 "------------------------------------------------------------
 " 2. Language and encoding
@@ -112,7 +111,7 @@ let g:airline#extensions#tabline#enabled = 1
 ""    let g:airline_symbols = {}
 "endif
 
-let g:airline_theme='molokai'
+let g:airline_theme='minimalist'
 let g:airline_section_c = []
 "let g:airline_symbols.maxlinenr = ' ln '
 "let g:airline#extensions#tabline#formatter = 'jsformatter'

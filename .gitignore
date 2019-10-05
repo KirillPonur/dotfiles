@@ -5,6 +5,8 @@
 .bash_profile
 .cache
 .config/GitKraken
+.config/NRAO
+.config/NuGet
 .config/QtProject.conf
 .config/Spyderrc
 .config/Trolltech.conf
@@ -24,10 +26,12 @@
 .config/dolphinrc
 .config/emaildefaults
 .config/falkon
+.config/filelightrc
 .config/filetypesrc
 .config/fontconfig
 .config/gconf
 .config/google-chrome
+.config/gtk-2.0
 .config/gtkrc
 .config/gtkrc-2.0
 .config/gwenviewrc
@@ -37,6 +41,7 @@
 .config/katerc
 .config/kateschemarc
 .config/katevirc
+.config/kcmfonts
 .config/kcminputrc
 .config/kconf_updaterc
 .config/kdeconnect
@@ -45,6 +50,7 @@
 .config/kdialogrc
 .config/kglobalshortcutsrc
 .config/khotkeysrc
+.config/kinfocenterrc
 .config/kmixrc
 .config/knfsshare
 .config/konsolerc
@@ -64,6 +70,7 @@
 .config/manjaro
 .config/manjaro-hello.json
 .config/matplotlib
+.config/menus
 .config/mimeapps.list
 .config/octopi
 .config/okularpartrc
@@ -81,6 +88,7 @@
 .config/pulse
 .config/session
 .config/soffice.binrc
+.config/spectaclerc
 .config/spyder-py3
 .config/startupconfig
 .config/startupconfigfiles
@@ -97,9 +105,12 @@
 .gitkraken
 .ipython
 .kde4
+.local/share/NuGet
 .local/share/RecentDocuments
 .local/share/Steam
+.local/share/TelegramDesktop
 .local/share/Trash
+.local/share/anaconda
 .local/share/applications
 .local/share/baloo
 .local/share/calligrasheets
@@ -107,6 +118,7 @@
 .local/share/gsettings-data-convert
 .local/share/gvfs-metadata
 .local/share/gwenview
+.local/share/icons
 .local/share/inxi
 .local/share/jupyter
 .local/share/kactivitymanagerd
@@ -128,6 +140,7 @@
 .local/share/user-places.xbel
 .local/share/user-places.xbel.bak
 .local/share/user-places.xbel.tbcache
+.local/share/vulkan
 .pki
 .profile
 .steam

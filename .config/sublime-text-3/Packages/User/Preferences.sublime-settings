@@ -5,10 +5,9 @@
 	"font_size": 12,
 	"ignored_packages":
 	[
-		"Vintage"
 	],
 	"spell_check": false,
 	"tab_size": 4,
-	"theme": "Adaptive.sublime-theme",
+	"theme": "Monokai+.sublime-theme",
 	"translate_tabs_to_spaces": true
 }
