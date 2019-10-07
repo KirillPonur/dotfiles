@@ -39,7 +39,8 @@ Plug 'crusoexia/vim-monokai'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
-Plug 'rosenfeld/conque-term'      	" Consoles as buffers
+"Plug 'rosenfeld/conque-term'      	" Consoles as buffers
+Plug 'ivanov/vim-ipython'
 call plug#end()
 "------------------------------------------------------------
 " 2. Language and encoding

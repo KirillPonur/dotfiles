@@ -7,7 +7,8 @@
                 "cwd": "${file_path:${folder}}"
                 }
     },
-    
+        
+    {"keys": ["ctrl+shift+o"], "command": "open_file_folder"},
     { "keys": ["ctrl+й"], "command": "exit" },
 
     { "keys": ["ctrl+shift+т"], "command": "new_window" },

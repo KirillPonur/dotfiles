@@ -37,20 +37,20 @@
 .config/gwenviewrc
 .config/kactivitymanagerd-statsrc
 .config/kactivitymanagerdrc
-.config/katemetainfos
-.config/katerc
-.config/kateschemarc
 .config/katevirc
 .config/kcmfonts
 .config/kcminputrc
+.config/kcmshell5rc
 .config/kconf_updaterc
 .config/kdeconnect
 .config/kded5rc
 .config/kdeglobals
 .config/kdialogrc
 .config/kglobalshortcutsrc
+.config/khelpcenterrc
 .config/khotkeysrc
 .config/kinfocenterrc
+.config/kmenueditrc
 .config/kmixrc
 .config/knfsshare
 .config/konsolerc
@@ -96,7 +96,6 @@
 .config/sublime-text-3
 .config/systemmonitorrc
 .config/systemsettingsrc
-.config/tilda
 .config/touchpadxlibinputrc
 .config/trashrc
 .config/yakuakerc
@@ -107,7 +106,6 @@
 .kde4
 .local/share/NuGet
 .local/share/RecentDocuments
-.local/share/Steam
 .local/share/TelegramDesktop
 .local/share/Trash
 .local/share/anaconda
@@ -125,6 +123,7 @@
 .local/share/kate
 .local/share/kcookiejar
 .local/share/kded5
+.local/share/khelpcenter
 .local/share/klipper
 .local/share/knewstuff3
 .local/share/konsole
@@ -151,7 +150,5 @@
 .vim/sessions
 .viminfo
 .xinitrc
-bash_logout
 documents
 downloads
-steampid
